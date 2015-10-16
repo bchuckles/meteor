@@ -23,3 +23,10 @@ d3js:d3
 momentjs:moment
 twbs:bootstrap
 fortawesome:fontawesome
+mrt:bootstrap-3
+accounts-password
+accounts-ui
+kadira:react-layout
+kadira:flow-router
+meteorhacks:picker
+http

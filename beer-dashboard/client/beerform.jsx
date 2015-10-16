@@ -1,3 +1,5 @@
+
+
 BeerForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
@@ -7,10 +9,13 @@ BeerForm = React.createClass({
         Meteor.call("insertBeer", numBeers.value, moment(beerDate.value).toDate(), function(e, r) {
             if (e) alert(e.reason)
         });
-
+        Meteor.call('geoJsonForIp', '8.8.8.8', function(err,res){
+            console.log(res);
+        });
         numBeers.value = "";
         beerDate.value = "";
     },
+
 
     render: function() {
         return (
