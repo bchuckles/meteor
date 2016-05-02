@@ -8,7 +8,7 @@ Meteor.methods({
         numBeers = parseInt(numBeers);
 
         //check(numBeers, Number);
-        //check(date, Date);
+        check(date, Date);
 
         return Beers.insert({beers: numBeers, date: date});
     },
